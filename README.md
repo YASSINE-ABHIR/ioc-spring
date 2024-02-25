@@ -41,11 +41,11 @@ Ce projet Java illustre un système de gestion de DAO (Data Access Object) en ut
 
 ## Description
 
-    Ce projet Java met en œuvre un système de gestion de DAO (Data Access Object) en utilisant le puissant framework Spring. L'accent est particulièrement mis sur l'Injection des dépendances avec Spring IOC (Inversion of Control). Cette approche favorise une conception modulaire et souple, où la responsabilité de la création et de la gestion des objets est déléguée au conteneur Spring. Grâce à l'injection de dépendances, les classes du projet peuvent être configurées de manière déclarative, réduisant ainsi le couplage entre les composants et facilitant la maintenance.
+<p> Ce projet Java met en œuvre un système de gestion de DAO (Data Access Object) en utilisant le puissant framework Spring. L'accent est particulièrement mis sur l'Injection des dépendances avec Spring IOC (Inversion of Control). Cette approche favorise une conception modulaire et souple, où la responsabilité de la création et de la gestion des objets est déléguée au conteneur Spring. Grâce à l'injection de dépendances, les classes du projet peuvent être configurées de manière déclarative, réduisant ainsi le couplage entre les composants et facilitant la maintenance.</p>
 
-    L'architecture du projet suit les principes de l'architecture JEE (Java Platform, Enterprise Edition), visant à créer des applications Java robustes et évolutives pour l'entreprise. En incorporant les meilleures pratiques de JEE, le projet s'aligne sur des normes élevées de modularité, de sécurité et de performance. Les DAOs sont gérés de manière transparente grâce à la configuration Spring, permettant une intégration harmonieuse avec d'autres composants de l'application.
+<p> L'architecture du projet suit les principes de l'architecture JEE (Java Platform, Enterprise Edition), visant à créer des applications Java robustes et évolutives pour l'entreprise. En incorporant les meilleures pratiques de JEE, le projet s'aligne sur des normes élevées de modularité, de sécurité et de performance. Les DAOs sont gérés de manière transparente grâce à la configuration Spring, permettant une intégration harmonieuse avec d'autres composants de l'application.</p>
 
-    Dans l'ensemble, ce projet illustre une approche moderne et efficace pour la gestion des données dans le contexte de l'architecture JEE, en tirant pleinement parti des fonctionnalités offertes par Spring IOC pour promouvoir une conception logicielle robuste et extensible.
+<p> Dans l'ensemble, ce projet illustre une approche moderne et efficace pour la gestion des données dans le contexte de l'architecture JEE, en tirant pleinement parti des fonctionnalités offertes par Spring IOC pour promouvoir une conception logicielle robuste et extensible.</p>
 
 Le projet se compose des éléments suivants :
 
@@ -61,19 +61,20 @@ Le projet se compose des éléments suivants :
 
 ## Fonctionnalités ⚙️
 
-- Utilisation de l'inversion de contrôle (IoC) avec Spring pour gérer les dépendances.
-- Implémentation de DAO avec deux versions pour récupérer des données.
-- Utilisation de l'annotation `@Component` pour marquer les classes gérées par Spring.
-- Utilisation des annotations `@Qualifier` et `@Autowired` pour injecter les dépendances correctes.
-- Configuration du contexte Spring à l'aide de fichiers XML ou d'annotations.
+Ce projet présente plusieurs fonctionnalités axées sur la gestion efficace des dépendances et l'utilisation optimale du framework Spring :
 
-## Exécution ▶️
+<ul>
+<li> Inversion de contrôle (IoC) avec Spring : Les dépendances sont gérées de manière décentralisée grâce à l'inversion de contrôle, offrant une conception modulaire et souple.
+</li>
+<li>Implémentation de DAO à deux niveaux : Deux versions du Data Access Object (DAO) sont mises en œuvre pour récupérer des données, offrant une flexibilité dans le choix de la source de données. </li>
 
-Pour exécuter le projet, vous pouvez utiliser l'une des classes de présentation fournies :
+<li> Annotations Spring : </li>
+<ul>
+<li> Utilisation de l'annotation @Component : Les classes sont marquées avec @Component pour signaler à Spring qu'elles sont gérées par le conteneur IoC.
+Annotations @Qualifier et @Autowired : Ces annotations sont employées pour injecter correctement les dépendances, permettant une configuration précise des composants.
+Configuration flexible du contexte Spring : Le contexte Spring peut être configuré soit à l'aide de fichiers XML, offrant une configuration externe, soit à travers l'utilisation d'annotations directement dans le code, assurant ainsi une configuration plus interne et concise.
+</li>
+</ul>
+</ul>
 
-- `presentation.Presentation` : Utilisation manuelle des classes de DAO et de métier.
-- `presentation.Presentation_V2` : Lecture dynamique des classes à partir d'un fichier de configuration.
-- `presentation.PresentationSpringAnnotation` : Utilisation de Spring avec des annotations.
-- `presentation.PresentationSpringXML` : Utilisation de Spring avec un fichier de configuration XML.
-
-Assurez-vous d'avoir les dépendances appropriées (Spring Framework) dans votre projet pour exécuter avec succès les différentes classes de présentation.
+- Ces fonctionnalités garantissent une gestion efficace des dépendances, une modularité accrue, et une configuration flexible du projet à travers l'utilisation judicieuse des fonctionnalités offertes par le framework Spring.
