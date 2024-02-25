@@ -1,6 +1,6 @@
 # Injection des dépendances avec Spring IOC
 
-### Introduction
+## Introduction
 
 - L'injection des dépendances avec Spring IOC (Inversion of Control) est un concept clé dans le framework Spring, qui vise à améliorer la modularité, la flexibilité et la facilité de test des applications Java. Dans le contexte de la programmation orientée objet, la dépendance se réfère à la relation entre deux classes lorsqu'une classe dépend de l'autre pour son fonctionnement.
 
